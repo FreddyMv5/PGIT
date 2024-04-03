@@ -12,7 +12,7 @@
             background-color: #f0f0f0;
         }
         .navbar {
-            background-color: #2b7460;
+            background-color: #333;
             padding: 10px 0;
             text-align: center;
         }
@@ -35,26 +35,40 @@
         p {
             color: #666;
         }
-        .message {
-            padding: 20px;
-            background-color: #f44336;
+        /* Estilo para el botón ATRÁS */
+        button {
+            background-color: #87CEEB; /* Color azul cielo */
             color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            text-align: center;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #5F9EA0; /* Cambia de color al pasar el ratón */
         }
     </style>
 </head>
 <body>
 
-    <div class="navbar">
-        <strong><a href="index.html">Inicio</a></strong>
-        <strong><a href="home.html">Home</a></strong>
-    </div>
-
-<div class="message">
-    <h2>Página en Construcción</h2>
-    <p>Lamentamos las molestias, pero esta página aún está en construcción.</p>
+<div class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="home.html">Ir a Home</a>
 </div>
 
-</bo
+<div class="container">
+    <h1>Página en Construcción</h1>
+    <p>Lamentamos las molestias, pero esta página aún está en construcción.</p>
+    <!-- Botón ATRÁS con color azul cielo -->
+    <button onclick="goBack()">ATRÁS</button>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>
