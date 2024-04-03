@@ -12,14 +12,21 @@
             background-color: #f0f0f0;
         }
         .navbar {
-            background-color: #2b7460;
+            background-color: #333;
             padding: 10px 0;
             text-align: center;
         }
         .navbar a {
             color: #fff;
             text-decoration: none;
-            margin: 50 100px;
+            margin: 0 10px;
+            
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: box-shadow 0.3s ease; 
+        }
+        .navbar a:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
         .container {
             max-width: 800px;
@@ -40,14 +47,14 @@
 <body>
 
 <div class="navbar">
-    <strong><a href="index.html">Inicio</a></strong>
-    <strong><a href="home.html">Home</a></strong>
+    <a href="index.html">Inicio</a>
+    <a href="home.html">Ir a Home</a>
 </div>
 
 <div class="container">
-    <h1>Bienvenido</h1>
-    <p>Esto es una página web en desarrollo 😀</p>
-    <p>Pronto podrás enterarte de este nuevo proyecto! 😎</p>
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Esta es una página web sencilla creada con HTML.</p>
+    <p>Puedes editar este archivo index.html para comenzar a construir tu propio sitio web.</p>
 </div>
 
 </body>
